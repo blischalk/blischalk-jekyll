@@ -51,7 +51,7 @@ class CreateAuthenticatedRole < ActiveRecord::Migration
     Role.delete(role)
   end 
 end
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight ruby %}
 # Migration that adds username and runs after the previous data munging migration
@@ -67,7 +67,7 @@ class AddNameToUsers < ActiveRecord::Migration
     remove_column :users, :user_name
   end 
 end
-{% end highlight %}
+{% endhighlight %}
 
 And then the last piece of the puzzle, the user model that went with the migration
 
