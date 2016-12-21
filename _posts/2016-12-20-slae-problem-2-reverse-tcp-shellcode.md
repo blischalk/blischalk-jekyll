@@ -33,7 +33,7 @@ My approach to building a tcp reverse shell shellcode will be to:
 
 ## The Source Code<a id="sec-1-3" name="sec-1-3"></a>
 
-The source code and tools referenced in this article can be found here:
+The source code and tools referenced in this article can be found [here](https://github.com/blischalk/slae/tree/master/exercise2)
 
 ## The C progam<a id="sec-1-4" name="sec-1-4"></a>
 
