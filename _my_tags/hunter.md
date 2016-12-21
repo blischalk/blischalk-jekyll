@@ -1,0 +1,4 @@
+---
+slug: hunter
+name: Hunter
+---

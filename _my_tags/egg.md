@@ -1,0 +1,4 @@
+---
+slug: egg
+name: Egg
+---
