@@ -1,25 +1,25 @@
 # Mandatory settings
 
-name: Chalk
+name: Brett Lischalk
 paginate: 25
 paginate_path: "/posts/page/:num/"
-url: # add site url http://example.com/
-blog_theme: light # Or use dark
+url: "http://brettlischalk.com/"
+blog_theme: dark # Or use dark
 
 # Optional settings
 
-discus_identifier: # Add your Disqus identifier
+discus_identifier: blischalkblog
 ga_analytics: # Add your GA Tracking Id
 rss_enabled: true # Change to false if not
-about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
+about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
 social:
   dribbble: # Add your Dribbble handle
   facebook: # Add your Facebook handle
   flickr: # Add your Flickr handle
-  github: # Add your GitHub handle
-  linkedin: # Add your LinkedIn handle
-  twitter: # Add your Twitter handle
-  email: # Add your Email address
+  github: blischalk
+  linkedin: "brett-lischalk-3104537"
+  twitter: blischalk
+  email: brett@brettlischalk.com
   bitcoin: # Add your Bitcoin link or address
 
 # Important settings (change at own risk)
@@ -62,5 +62,6 @@ gems:
   - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
   - jemoji
 permalink: posts/:slug
