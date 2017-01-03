@@ -1,0 +1,4 @@
+---
+slug: msfvenom
+name: msfvenom
+---
