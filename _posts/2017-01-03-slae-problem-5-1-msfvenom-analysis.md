@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "SLAE Problem 5.1: Msfvenom Analysis"
+title: "SLAE Problem 5.1: Msfvenom Analysis of linux/x86/shell_reverse_tcp"
 description: "Analysis of Msfvenom shellcode samples"
 tags: [asm, shellcode, msfvenom]
 ---
 
-# Assignment 5.1: Msfvenom Analysis
+# Assignment 5.1: Msfvenom Analysis - linux/x86/shell_reverse_tcp
 
 This blog post has been created for completing the requirements for the SecurityTube
 Linux Assembly Expert certification:
@@ -19,7 +19,7 @@ Student ID: SLAE-824
 - Use GDB/Ndisasm/Libemu to dissect the functionality of the shellcode
 - Present your analysis
 
-### Shellcode 1: linux/x86/shell_reverse_tcp
+### Analysis
 
 Since I had created a reverse tcp shellcode for assignment 2 of the SLAE
 I decided that it would be interesting to look at msfvenom's version and
@@ -47,7 +47,7 @@ dot -Tpng revshell.dot > revshell.png
 
 Which gives us:
 
-<img src="revshell.png" alt="revshell.dot" style="width: 500px;"/>
+<img src="{% asset_path 'revshell.png' %}" alt="revshell.png" style="width: 500px;"/>
 
 Cool. Looking at the purple boxes we see that the system calls that are
 being used are:
@@ -162,7 +162,7 @@ we see:
 1. Using 2 xor operations yields the same number of bytes/opcodes as using an xor and a mul instruction
 2. Using a single dword push instruction instead of 2 push word instructions yields 1 less byte/opcode but it does introduce a null byte.
 
-<img src="opcodeComparison.png" alt="opcodeComparison.png" style="width: 500px;"/>
+<img src="{% asset_path 'opcodeComparison.png' %}" alt="opcodeComparison.png" style="width: 500px;"/>
 
 It was really interesting to see what MSFvenom generated shellcode looks like.
 Doing this exercise has taken a bit of the mystique of MSFVenom away and I look
