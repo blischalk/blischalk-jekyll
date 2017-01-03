@@ -5,8 +5,6 @@ description: "Analysis of Msfvenom shellcode samples"
 tags: [asm, shellcode, msfvenom]
 ---
 
-# Assignment 5.1: Msfvenom Analysis - linux/x86/shell_reverse_tcp
-
 This blog post has been created for completing the requirements for the SecurityTube
 Linux Assembly Expert certification:
 [<http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert>](http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert)
