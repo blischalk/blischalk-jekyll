@@ -123,7 +123,8 @@ Since the call instruction is executing code at an offset in the
 shellcode our disassembler has failed us making the instructions
 after the call seem random and non-sensical. libemu seems to
 have gotten them right but we can also drop the bytes
-`57 53 89 e1 cd 80` into our online disassembler [here](https://defuse.ca/online-x86-assembler.htm#disassembly2).
+`57 53 89 e1 cd 80` into our favorite online disassembler
+[here](https://defuse.ca/online-x86-assembler.htm#disassembly2).
 Another trick is to use a bit of perl like so:
 
 {% highlight bash %}
