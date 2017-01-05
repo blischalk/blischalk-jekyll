@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SLAE Problem 5.2: Msfvenom Analysis of linux/x86/adduser"
-description: "Analysis of Msfvenom shellcode samples"
+description: "Analysis of Msfvenom shellcode: linux/x86/adduser"
 tags: [asm, shellcode, msfvenom]
 ---
 

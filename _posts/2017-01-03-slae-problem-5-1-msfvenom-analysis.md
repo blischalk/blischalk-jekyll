@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SLAE Problem 5.1: Msfvenom Analysis of linux/x86/shell_reverse_tcp"
-description: "Analysis of Msfvenom shellcode samples"
+description: "Analysis of Msfvenom shellcode: linux/x86/shell_reverse_tcp"
 tags: [asm, shellcode, msfvenom]
 ---
 
