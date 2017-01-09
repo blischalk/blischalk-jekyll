@@ -17,6 +17,8 @@ Student ID: SLAE-824
 - Use GDB/Ndisasm/Libemu to dissect the functionality of the shellcode
 - Present your analysis
 
+Source code for this assignment can be found [here](https://github.com/blischalk/slae/tree/master/exercise5)
+
 ### Analysis
 
 Since I had created a reverse tcp shellcode for assignment 2 of the SLAE

@@ -18,6 +18,8 @@ Student ID: SLAE-824
 - Use GDB/Ndisasm/Libemu to dissect the functionality of the shellcode
 - Present your analysis
 
+Source code for this assignment can be found [here](https://github.com/blischalk/slae/tree/master/exercise5)
+
 ### Analysis
 
 For this analysis I have chosen to analyze `linux/x86/exec`. My initial
