@@ -469,7 +469,7 @@ throw it in gdb and extract the assembly code:
 {% endhighlight %}
 
 So the first thing that jumps out about this shellcode is that it
-appears to be utilizing the `jmp call` pop technique.
+appears to be utilizing the `jmp call pop` technique.
 
 
 {% highlight bash %}
