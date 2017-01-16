@@ -43,7 +43,7 @@ rmdir $DIR
 {% endhighlight %}
 
 
-This lets us do the lookup opcodes for assembly like:
+This lets us lookup opcodes for assembly like:
 
 {% highlight bash %}
 ~/$ asmop
