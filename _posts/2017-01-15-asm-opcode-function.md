@@ -20,7 +20,7 @@ Here is a little shell function I put in my `.bashrc`:
 
 {% highlight bash %}
 function asmop {
-DIR=safetydir123
+DIR=/tmp/asmop
 mkdir $DIR
 cd $DIR
 FILE=tmpasm
