@@ -103,7 +103,12 @@ executable fuzz-exe
 
 The two dependencies we have added are `network-simple` which is the
 TCP library we found earlier and `bytestring` which is a library
-included with Haskell we need to require into our project.
+included with Haskell we need to require into our project. You'll
+notice that in the stack.yaml file a version is appended after the
+name of the library. This version number can be derived from a Haskell
+libraries info page
+[like this one](https://hackage.haskell.org/package/network-simple). You'll
+see that at the time of this writing `0.4.0.5` is the latest version.
 
 Next we write our code:
 
@@ -132,6 +137,15 @@ fuzz = do
     send connectionSocket payload
 
 {% endhighlight %}
+
+The code is pretty self explanatory. We:
+
+1. import the libraries we need for dealing with TCP
+2. define some constants
+3. define the payload that we want to send across the wire, in this
+   case, a series of 500 A's.
+4. setup our IO Monad which prints some helpful messaging, makes our
+   connection, and sends the payload over the socket.
 
 If we startup a netcat listener using `nc -nlvp 4444` in one terminal:
 
