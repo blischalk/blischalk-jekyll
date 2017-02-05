@@ -5,6 +5,8 @@ description: "An example TCP fuzzer written in Haskell"
 tags: [haskell, fuzzer]
 ---
 
+Code for this project can be found on Github [here](https://github.com/blischalk/haskell-fuzzer).
+
 I have been spending a lot of time lately programming in C and the
 verbosity and memory management have ben wearing on me. In my day job
 I have worked mostly in Clojure for the past few years so working on
