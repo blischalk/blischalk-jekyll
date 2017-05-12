@@ -1,0 +1,4 @@
+---
+slug: manjaro
+name: manjaro
+---
