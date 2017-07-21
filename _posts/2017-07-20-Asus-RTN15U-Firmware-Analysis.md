@@ -52,7 +52,7 @@ website
 [here](https://www.asus.com/Networking/RTN15U/HelpDesk_Download/).
 
 
-![Asus RT-N15U Firmware Download](/assets/Firmware/RTN15UFirmwaredownload.png)
+![Asus RT-N15U Firmware Download](/assets/Firmware/RTN15UFirmwareDownload.png)
 
 ## Offline Analysis Of The Asus RT-N15U Firmware
 
