@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kankun Smart Plug Network Decryption"
-description: "In the first blog post about the Kankun smartplug, the Android application was decompiled and the AES-256 bit encryption key was found. In this blog post: The network traffic between the mobile app and smartphone will be captured, the network traffic will be decrypted utilizing a script from Payatu and the encryption key found previously, an analysis of the script from Payatu, the Kankun Smartplug will be controlled via the Kankun Controller Script an analysis of the Kankun Controller Script from 0x00string"
+description: "In the first blog post about the Kankun smartplug, the Android application was decompiled and the AES-256 bit encryption key was found. In this blog post, the network traffic between the mobile app and smartphone will be captured, the network traffic will be decrypted utilizing a script from Payatu and the encryption key found previously, an analysis of the script from Payatu, the Kankun Smartplug will be controlled via the Kankun Controller Script an analysis of the Kankun Controller Script from 0x00string"
 tags: [analysis, kankun, decryption]
 ---
 
