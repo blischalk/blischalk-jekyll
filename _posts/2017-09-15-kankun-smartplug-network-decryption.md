@@ -33,9 +33,9 @@ The setup that is necessary involves:
 - Connecting to the Wi-Fi SSID from a machine running Wireshark
 - Setting Wireshark up to monitor the network traffic
 
-![Kankun Smart Plug Iphone App](/assets/Kankun/KankunIphoneApp.png)
-![Kankun Smart Plug](/assets/Kankun/KankunSmartPlug.jpg)
-![Kankun Plugged In](/assets/Kankun/KankunPluggedIn.jpg)
+![Kankun Smart Plug Iphone App](/assets/Kankun/iphoneapp.png)
+![Kankun Smart Plug](/assets/Kankun/smartplug.jpg)
+![Kankun Plugged In](/assets/Kankun/pluggedin.jpg)
 
 I'll leave installing the iphone app to the manual that comes with the
 plug. I'll also leave monitoring network traffic with Wireshark to the
