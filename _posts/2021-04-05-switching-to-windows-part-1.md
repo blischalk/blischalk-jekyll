@@ -3,7 +3,7 @@ layout: post
 title: "Switching to Windows Part 1"
 description: 'Taking the plunge on a Windows based laptop after years using OS X and Linux
 based devices'
-tags: [windows linux mac wsl virtualization docker]
+tags: [windows, linux, mac, wsl, virtualization, docker]
 ---
 
 # Switching to Windows Part 1
