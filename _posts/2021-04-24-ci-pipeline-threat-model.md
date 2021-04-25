@@ -73,7 +73,7 @@ address the potential risk.
 
 #### Threat
 
->> A developers laptop is lost or stolen. The hard drive is not encrypted so the attacker is able to use a tool such as [Konboot](https://kon-boot.com) to bypass password authentication and have commit access the all repositories to and ssh access to all systems the developer has access to.
+>> A developers laptop is lost or stolen. The hard drive is not encrypted so the attacker is able to use a tool such as [Konboot](https://kon-boot.com) to bypass password authentication and have commit access to all the repositories and ssh access to all the systems the developer has access to.
 
 
 #### Mitigations
@@ -162,7 +162,7 @@ address the potential risk.
 
 #### Threat
 
->> An popular opensource dependency used by application gets compromised by an attacker.
+>> An popular opensource dependency used by the application gets compromised by an attacker.
 >> The attacker implants bitcoin mining software into the dependency so that
 >> consuming applications will mine bitcoin for the attacker
 
@@ -178,6 +178,7 @@ address the potential risk.
 * Build and integrate tooling into CI pipelines as a technical control that reviews package files and
   identifies non-company sanctioned repositories; enforcing company policy
 * Subscribe the engineering team to security disclosure distro lists so that
+  they may be alerted when supply chain attacks are discovered
 
 #### Threat
 
