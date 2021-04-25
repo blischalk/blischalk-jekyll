@@ -2,7 +2,7 @@
 layout: post
 title: "Build A Web Site/App Quick and Cheap!"
 description: 'Cheapest and fastest ways to get your project online'
-tags: [thrifty cheap fast webapp php ruby static-site-generator gitlab github]
+tags: [thrifty, cheap, fast, webapp, php, ruby, static site generator, gitlab, github]
 ---
 
 # Build A Web Site/App Quick and Cheap!

@@ -2,7 +2,7 @@
 layout: post
 title: "Amazon ECR Image Scanning Gotchas"
 description: 'Things you should know about the "vulnerabilities" ECR image scan results report'
-tags: [docker aws ecr clair vulnerabilities compliance scanning]
+tags: [docker, aws, ecr, clair, vulnerabilities, compliance, scanning]
 ---
 
 After working with ECR image scanning for a while now I felt that there are
