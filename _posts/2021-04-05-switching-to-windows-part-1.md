@@ -43,7 +43,7 @@ chunky, and the plastic felt super cheap. The touchpad was junk. The
 thing just looked extremely dated and cheap even though it was a brand
 new laptop. After using beautiful macbooks for so long it made it even
 harder to accept. However, even though I was so sad, I decided not to
-return it and perserver. I kept it because I wanted to experience what
+return it and persevere. I kept it because I wanted to experience what
 it was like to have a laptop that was made to run Linux. No issues
 with graphics drivers or wi-fi getting lost after sleep, or any of the
 other non-sense people have to deal with when trying to get Linux
