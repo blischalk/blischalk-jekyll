@@ -19,10 +19,11 @@ diagrams, dataflow diagrams, attack tree diagrams, etc. can all be used and if
 they already exist, are good starting points and save the work of having to draw
 new ones from scratch. With that said, what are we building?
 
-Today we will be building out a CI pipeline that allows an engineer to push
-their code to a git version control system, which will then build, test, and
-deploy a docker image to a container registry. To illustrate this process, I have put
-together the following diagram:
+Today we will be building out a continuous integration pipeline that
+allows an engineer to push their code to a git version control system,
+which will then build, test, and deploy a docker image to a container
+registry. To illustrate this process, I have put together the
+following diagram:
 
 ![Container build, test, publish piepline](/assets/ci-threat-model.png)
 
