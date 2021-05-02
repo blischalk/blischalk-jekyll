@@ -3,7 +3,7 @@
 name: Brett Lischalk
 paginate: 25
 paginate_path: "/posts/page/:num/"
-url: "http://brettlischalk.com/"
+url: "http://brettlischalk.com"
 blog_theme: dark # Or use dark
 
 # Optional settings
@@ -51,6 +51,8 @@ defaults:
 exclude:
   - .bowerrc
   - .travis.yml
+  - .package-lock.json
+  - .package
   - bin/*
   - bower.json
   - circle.yml
@@ -58,6 +60,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
+  - node_modules/
 gems:
   - jekyll-assets
   - jekyll-paginate
