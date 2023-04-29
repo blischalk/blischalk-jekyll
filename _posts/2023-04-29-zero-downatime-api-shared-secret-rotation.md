@@ -7,7 +7,7 @@ tags: [secret rotation, zero down time, shared secret]
 
 # Zero Downtime API Shared Secret Rotation
 
-Secrets are used in software applications for many different different things from connecting to a database to signing a JWT passed between services. It is considered a security best practice to rotate these types of secrets on a regular basis. Some reasons for this are:
+Secrets are used in software applications for many different things from connecting to a database to signing a JWT passed between services. It is considered a security best practice to rotate these types of secrets on a regular basis. Some reasons for this are:
 
 - If a secret is accidentally exposed in logs, accidentally committed to version control, etc., having a process in place which smoothly rotates a secret turns what would be a firedrill into much less risky operation
 - Rotating secrets regularly helps to ensure that if a malicious
@@ -19,7 +19,7 @@ secrets are harder to rotate than others but with a little planning, the tools
 exist to make secret rotation possible and possibly even with zero downtime. AWS
 provides some good documentation on retrieving secrets from [Secrets
 Manager](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-app-secrets-manager.html) and [Parameter Store](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-app-ssm-paramstore.html) as well as some [examples of dynamic credential rotation](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/rotate-database-credentials-without-restarting-containers.html).
-We can use this information to put together a solution for how we can rotation
+We can use this information to put together a solution for how we can rotate
 credentials within our applications. Lets get started.
 
 ## A Shared Secret
@@ -44,9 +44,7 @@ we set the secret to `MyInitialSecret`.
 
 ## The API
 
-The first thing we will do is create a small api that has an endpoint protected with
-bearer authentication. The secret is acquired from the environment the way most
-applications typically would:
+The first thing we will do is create a small Python Flask api that has an endpoint protected with bearer authentication. The secret is acquired from the environment the way most applications typically would:
 
 {% highlight python %}
 import os
@@ -68,7 +66,7 @@ def hello():
     return 'Hello, World!'
 {% endhighlight %}
 
-Next, we'll create a class that:
+Next, we'll create a `Secrets` class that:
 
 - Has a method to pull / refresh credentials from AWS Parameter Store
 - Has a method to get a secret from the object
@@ -120,7 +118,7 @@ def verify_token(token):
 
 {% endhighlight %}
 
-And lastly we'll update the code so that when a client authenticates the api
+And lastly we'll update the code so that when a client authenticates, the api
 first tries to authenticate against the secret the app acquired at boot. If that
 fails, the app will use the `refresh` method on the `Secrets` object to update
 the secrets from Parameter Store and then attempt the comparison again:
@@ -236,7 +234,7 @@ value of `MyNewSecret`:
 
 ![Updated AWS SSM Parameter](/assets/SecretRotation/UpdatedAWSSSMParameter.png)
 
-And without restarting our server (cause that would be cheating ;)) we use curl
+And without restarting our server (because that would be cheating ;)) we use curl
 again with the updated secret:
 
 {% highlight bash %}
@@ -269,9 +267,8 @@ And as we would expect, we are denied access.
 ## Conclusion
 
 I hope this blog post helps to make secret rotation a little less intimidating
-and more approachable for engineers. This solution does have its weaknesses. One weakness is that every failed token validtion triggers a call to AWS to refresh to token. This may or may not be an issue for an internal api but with a service like secrets manager that charges per api call, it might not be something you want someone to pound on and run up your bills. To address this the code could be updated to be more robust and implement a ttl of time between refreshes, that way the app would only attempt to refresh every so often instead constantly.
+and more approachable for engineers. This solution does have its weaknesses. One weakness is that every failed token validtion triggers a call to AWS to refresh to token. This may or may not be an issue for an internal api but with a service like secrets manager that charges per api call, it might not be something you want someone to pound on and run up your bills. To address this the code could be updated to be more robust and implement a ttl of time between refreshes, that way the app would only attempt to refresh every so often instead of on each failure.
 
 This post has been focused on the api server side of the secret rotation but how
-might the client get updated? It would actually be very similar to how the
-server handles the rotation but this post has become pretty lengthy so I'll save
+might a client service handle rotation when a shared secret is updated? It would actually be very similar to how the server handles the rotation but this post has become pretty lengthy so I'll save
 that for my next post.
